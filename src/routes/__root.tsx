@@ -3,29 +3,28 @@ import {
   Outlet,
   HeadContent,
   Scripts,
-} from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
-import { ConvexClientProvider } from '../convex'
+} from "@tanstack/react-router";
+import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 
-import appCss from '../styles.css?url'
+import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       {
-        charSet: 'utf-8',
+        charSet: "utf-8",
       },
       {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
       },
       {
-        title: 'TanStack Chat Starter',
+        title: "TanStack Chat Starter",
       },
     ],
     links: [
       {
-        rel: 'stylesheet',
+        rel: "stylesheet",
         href: appCss,
       },
     ],
@@ -37,7 +36,7 @@ export const Route = createRootRoute({
       <TanStackRouterDevtools />
     </RootDocument>
   ),
-})
+});
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
@@ -46,11 +45,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <ConvexClientProvider>
-          {children}
-        </ConvexClientProvider>
+        {children}
+
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
