@@ -9,10 +9,11 @@ function Home() {
 
       <div className="flex flex-col flex-1">
         <div className="flex items-center justify-center flex-1 px-4">
-          <div className="w-full max-w-3xl mx-auto text-center">
-            <h1 className="mb-4 text-6xl font-bold text-transparent uppercase bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text">
-              Hello
+          <div className="w-fit max-w-3xl mx-auto text-center">
+            <h1 className="w-fit mb-4 text-6xl font-bold uppercase bg-clip-text text-indigo-50">
+              Martin Lupton
             </h1>
+            <div className="h-2 bg-gradient-to-r from-purple-600 to-indigo-600" />
           </div>
         </div>
       </div>
