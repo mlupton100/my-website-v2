@@ -16,7 +16,7 @@ const LinkedIn = () => (
 );
 
 export const Sidebar = () => (
-  <div className="p-4 flex flex-col gap-6 w-64 text-indigo-50 bg-gray-900 border-r border-gray-700">
+  <div className="p-4 flex flex-col gap-6 md:w-64 text-indigo-50 bg-gray-900 border-r border-gray-700">
     <div className="pb-4 text-center border-b border-purple-600">
       👾 Martin Lupton 👾
     </div>
