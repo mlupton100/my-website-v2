@@ -21,7 +21,7 @@ export const Sidebar = () => (
       👾 Martin Lupton 👾
     </div>
     <div className="px-2 text-center">
-      <p>I'm a software engineer.</p>
+      <p>Software engineer.</p>
     </div>
     <div className="px-2 mx-auto">
       <LinkedIn />
